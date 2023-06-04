@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.max-width {
+  max-width: 900px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  color: white;
+}
+
+body>header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #271A45;
+}
+
+body>header>div {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header>div>nav>ul {
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.display-navbar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px;
+}
+
+.content {
+  position: absolute;
+  background: #202024;
+  padding: 16px;
+  border-radius: 9px;
+  width: max-content;
+}
+
+header>div>nav>button {
+  background: none;
+  border: none;
+}
+
+.link:active {
+  border: 1px solid grey;
+  border-radius: 9px;
+}
+
+header>div>nav>ul>.link {
+  font-size: 24px;
+  font-weight: 400;
+  color: #50c5d0;
+}
+
+header>div>h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+button>ion-icon {
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+
+main {
+  height: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+#parabens>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#parabens>div>img:nth-of-type(1) {
+  max-width: 45%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+#parabens>div>img:nth-of-type(2) {
+  border-radius: 9px;
+  max-width: 45%;
+}
+
+main>section {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#momentos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+#momentos>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+#momentos>div>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 5px;
+  /* border: 1px solid gray; */
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+}
+
+#momentos>div>div:nth-of-type(1) {
+  display: block;
+  min-width: 100%;
+  background: #271A45;
+  padding: 10px;
+  border-radius: 9px;
+  font-weight: lighter;
+}
+#momentos>div>div>h3{
+  margin-bottom: 5px;
+}
+
+#momentos>div>div>img{
+  object-fit: contain;
+  max-width: 350PX;
+  max-height: 400px;
+  border-radius: 9px;
+  /* border: 1px solid gray; */
+}
+
+main>section>header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+section>a {
+  height: 72px;
+  background-color: #202024;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+section>a>img {
+  width: 50px;
+  border-radius: 9px;
+}
+
+.lista-horizontal-tec p {
+  font-size: 16px;
+}
+
+#curriculo a {
+  color: #50c5d0;
+  padding: 0;
+  border: none;
+}
+
+footer {
+  border-top: 1px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 4px 4px;
+}
+
+.link:hover {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.social-media>a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 8px;
+  border-radius: 999px;
+}
+
+.lista-horizontal-tec {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lista-horizontal-tec>li>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px
+}
+
+.lista-horizontal-tec>li>div>div {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:600px) {
+  header>img {
+    width: 50px;
+  }
+
+  .social-media {
+    font-size: 20px;
+  }
+}
